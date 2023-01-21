@@ -262,12 +262,22 @@
     <source src="./music.mp3">
 	</audio> -->
 	
-	<iframe src="./music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+	<!-- <iframe src="./music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 
 	</iframe>
   <iframe src="./ggg.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 
-	</iframe>
+	</iframe> -->
+  <!-- <iframe src="./ggg.mp3" allow="autoplay" id="audio"></iframe> -->
+  <iframe src="./ggg.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+  </iframe> 
+  <!-- <audio autoplay>
+    
+    <source src="./ggg.mp3" style="display:none">
+  </audio> -->
+  <!-- <audio autoplay loop  id="playAudio">
+    <source src="./ggg.mp3">
+</audio> -->
   <!-- <iframe src="./music.mp3" allow="autoplay" id="audio"></iframe> -->
 	<div class="center">
 		<div><h2>Xuân Quý Mão</h2></div>
@@ -385,6 +395,11 @@
   	});
 	});
 </script>
+<script>
+  window.onload = function() {
+    var context = new AudioContext();
+  }
+  </script>
 
 </body>
 </html>
