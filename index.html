@@ -385,12 +385,21 @@
   var audio = document.getElementById("audio")
   function playAudio() {
     let iframe2 = document.createElement("iframe")
-    iframe2.setAttribute("src", "./ggg.mp3")
+    iframe2.setAttribute("src", "./gg.mp3")
     iframe2.setAttribute("allow", "autoplay")
     iframe2.setAttribute("type", "audio/mp3")
     iframe2.setAttribute("style", "display:none") 
     console.log(1111, audio)
     audio.append(iframe2)
+    setTimeout(() => {
+      let iframe1 = document.createElement("iframe")
+      iframe1.setAttribute("src", "./ggg.mp3")
+      iframe1.setAttribute("allow", "autoplay")
+      iframe1.setAttribute("type", "audio/mp3")
+      iframe1.setAttribute("style", "display:none") 
+      console.log(31, audio)
+      audio.append(iframe2)
+    }, 300)
     setTimeout(() => {
       let iframe = document.createElement("iframe")
       iframe.setAttribute("src", "./music.mp3")
